@@ -1,10 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasrif Khan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: #90cdf4;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            color: #2b6cb0;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #bee3f8;
+        }
+
+        #about img {
+            display: block;
+            margin: 1rem auto 1.2rem;
+            border-radius: 50%;
+            border: 4px solid #bee3f8;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        /* Education Table */
+        #education table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.97rem;
+        }
+
+        #education table thead {
+            background-color: #2b6cb0;
+            color: white;
+        }
+
+        #education table thead th {
+            padding: 0.85rem 1rem;
+            text-align: left;
+            letter-spacing: 0.5px;
+        }
+
+        #education table tbody tr {
+            border-bottom: 1px solid #e2e8f0;
+            transition: background 0.2s;
+        }
+
+        #education table tbody tr:hover {
+            background-color: #ebf8ff;
+        }
+
+        #education table tbody td {
+            padding: 0.85rem 1rem;
+            color: #2d3748;
+        }
+
+        #education table tbody td:first-child {
+            font-weight: 600;
+            color: #2b6cb0;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #bee3f8;
+            color: #2b6cb0;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .badge-green {
+            background-color: #c6f6d5;
+            color: #276749;
+        }
+
+        /* Skills */
+        #skills article ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        #skills article ul li {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 0.45rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid #bee3f8;
+        }
+
+        /* Contact */
+        #contact p {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+        }
+
+        #contact a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1a202c;
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -13,6 +197,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,9 +212,44 @@
             <h2>About Me</h2>
             <img src="tasrif453.jpeg" alt="Photo of Tasrif Khan" width="200">
             <p>
-                Hello! My name is Tasrif Khan. I am a student at the University of Rajshahi, 
+                Hello! My name is Tasrif Khan. I am a student at the University of Rajshahi,
                 studying in the Computer Science and Engineering (CSE) department.
             </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Educational Qualifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SSC</td>
+                        <td>2021</td>
+                        <td><span class="badge">GPA 5.00</span></td>
+                        <td>Professor M E H Arif High School</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>2023</td>
+                        <td><span class="badge">GPA 5.00</span></td>
+                        <td>Rajendrapur Cantonment Public School & College</td>
+                    </tr>
+                    <tr>
+                        <td>BSc (CSE)</td>
+                        <td>Running</td>
+                        <td><span class="badge badge-green">Ongoing</span></td>
+                        <td>University of Rajshahi</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- Skills Section -->
@@ -60,4 +280,5 @@
     </footer>
 
 </body>
+
 </html>
