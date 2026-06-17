@@ -1,286 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasrif Khan - Portfolio</title>
-
+    <title>Tasrif Khan - Portfolio | Home</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
-    <style>
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
-        }
-
-        /* Navbar */
-        .navbar {
-            background: linear-gradient(135deg, #0d1117, #1f2937) !important;
-        }
-
-        .navbar-brand {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #fff !important;
-        }
-
-        .nav-link {
-            color: #90cdf4 !important;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #ffffff !important;
-        }
-
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, #0d1117, #1f2937);
-            color: white;
-            padding: 90px 0 70px;
-            text-align: center;
-        }
-
-        .hero img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #90cdf4;
-            margin-bottom: 1.2rem;
-        }
-
-        .hero h1 {
-            font-size: 2.6rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .hero p {
-            color: #a0aec0;
-            font-size: 1.05rem;
-            max-width: 520px;
-            margin: 0 auto;
-        }
-
-        /* Section cards */
-        .section-card {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a56db;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #bee3f8;
-            margin-bottom: 1.4rem;
-        }
-
-        /* Education table */
-        .table thead {
-            background-color: #1a56db;
-            color: white;
-        }
-
-        .table-hover tbody tr:hover {
-            background-color: #ebf8ff;
-        }
-
-        .degree-label {
-            font-weight: 700;
-            color: #1a56db;
-        }
-
-        /* Skill badges */
-        .skill-badge {
-            font-size: 0.95rem;
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            font-weight: 600;
-        }
-
-        /* Contact icons */
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            margin-bottom: 0.85rem;
-            font-size: 1rem;
-        }
-
-        .contact-item i {
-            font-size: 1.3rem;
-            color: #1a56db;
-            width: 26px;
-            text-align: center;
-        }
-
-        .contact-item a {
-            color: #1a56db;
-            text-decoration: none;
-        }
-
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #0d1117, #1f2937);
-            color: #a0aec0;
-            text-align: center;
-            padding: 1.4rem;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100 bg-light text-dark">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand fw-bold text-info" href="index.html">
                 <i class="bi bi-code-slash me-2"></i>Tasrif Khan
             </a>
-            <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person me-1"></i>About</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <i class="bi bi-person me-1"></i>About
+                        </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#education"><i
-                                class="bi bi-mortarboard me-1"></i>Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills"><i class="bi bi-tools me-1"></i>Skills</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            <i class="bi bi-mortarboard me-1"></i>Education
+                        </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><i
-                                class="bi bi-envelope me-1"></i>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">
+                            <i class="bi bi-tools me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero / About -->
-    <section class="hero" id="about">
-        <div class="container">
-            <img src="tasrif453.jpeg" alt="Photo of Tasrif Khan">
-            <h1>Tasrif Khan</h1>
-            <p class="mt-2">
-                Hello! I am a student at the <strong style="color:#90cdf4;">University of Rajshahi</strong>,
-                studying in the Computer Science and Engineering (CSE) department.
+    <!-- Hero / Header -->
+    <section class="text-bg-dark bg-gradient py-5 text-center shadow">
+        <div class="container py-4">
+            <img src="tasrif453.jpeg" alt="Photo of Tasrif Khan" class="rounded-circle border border-4 border-info img-thumbnail mb-3" width="150" height="150" style="object-fit: cover;">
+            <h1 class="display-4 fw-bold">Tasrif Khan</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 600px;">
+                Computer Science and Engineering Student at the <strong class="text-info">University of Rajshahi</strong>.
             </p>
             <div class="mt-4 d-flex justify-content-center gap-3">
-                <a href="#contact" class="btn btn-primary px-4 rounded-pill">
+                <a href="contact.html" class="btn btn-info px-4 py-2 rounded-pill fw-semibold shadow-sm text-dark">
                     <i class="bi bi-chat-dots me-1"></i> Contact Me
                 </a>
-                <a href="#skills" class="btn btn-outline-light px-4 rounded-pill">
-                    <i class="bi bi-star me-1"></i> My Skills
+                <a href="skills.html" class="btn btn-outline-light px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                    <i class="bi bi-star me-1"></i> View Skills
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Main content -->
-    <main class="container py-4" style="max-width: 860px;">
-
-        <!-- Education Section -->
-        <div class="section-card" id="education">
-            <h2 class="section-title">
-                <i class="bi bi-mortarboard-fill me-2"></i>Educational Qualifications
-            </h2>
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover align-middle mb-0">
-                    <thead>
-                        <tr>
-                            <th><i class="bi bi-journal-bookmark me-1"></i> Degree</th>
-                            <th><i class="bi bi-calendar3 me-1"></i> Year</th>
-                            <th><i class="bi bi-award me-1"></i> GPA / Status</th>
-                            <th><i class="bi bi-building me-1"></i> Institution</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="degree-label">SSC</td>
-                            <td>2021</td>
-                            <td><span class="badge bg-primary rounded-pill px-3">GPA 5.00</span></td>
-                            <td>Professor M E H Arif High School</td>
-                        </tr>
-                        <tr>
-                            <td class="degree-label">HSC</td>
-                            <td>2023</td>
-                            <td><span class="badge bg-primary rounded-pill px-3">GPA 5.00</span></td>
-                            <td>Rajendrapur Cantonment Public School & College</td>
-                        </tr>
-                        <tr>
-                            <td class="degree-label">BSc (CSE)</td>
-                            <td>Running</td>
-                            <td><span class="badge bg-success rounded-pill px-3">Ongoing</span></td>
-                            <td>University of Rajshahi</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Main Content -->
+    <main class="container my-5 flex-shrink-0" style="max-width: 800px;">
+        <div class="card border-0 shadow-sm p-4 mb-4">
+            <div class="card-body">
+                <h2 class="card-title text-primary border-bottom border-2 border-primary-subtle pb-2 mb-4 fw-bold">
+                    <i class="bi bi-person-fill me-2"></i>About Me
+                </h2>
+                <p class="card-text fs-5 lh-base">
+                    Welcome to my portfolio! I am currently pursuing a Bachelor of Science degree in 
+                    <strong>Computer Science and Engineering</strong> at the <strong>University of Rajshahi</strong>.
+                </p>
+                <p class="card-text text-muted">
+                    I have a passion for learning new technologies and software development. My current academic focus 
+                    is on building solid programming fundamentals and understanding complex systems. I enjoy coding, 
+                    problem-solving, and building practical applications that make lives easier.
+                </p>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6">
+                        <div class="card h-100 border border-light-subtle bg-body-tertiary shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-info fw-bold"><i class="bi bi-mortarboard me-2"></i>Education Path</h5>
+                                <p class="card-text small text-muted">
+                                    Track my academic journey, credentials, and achievements.
+                                </p>
+                                <a href="education.html" class="btn btn-sm btn-outline-primary fw-semibold">View Qualifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border border-light-subtle bg-body-tertiary shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-info fw-bold"><i class="bi bi-tools me-2"></i>My Skillset</h5>
+                                <p class="card-text small text-muted">
+                                    Explore the programming languages and technical tools I use.
+                                </p>
+                                <a href="skills.html" class="btn btn-sm btn-outline-primary fw-semibold">Explore Skills</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Skills Section -->
-        <div class="section-card" id="skills">
-            <h2 class="section-title">
-                <i class="bi bi-tools me-2"></i>Skills
-            </h2>
-            <div class="d-flex flex-wrap gap-2 mt-1">
-                <span class="badge bg-primary skill-badge"><i class="bi bi-braces me-1"></i>C</span>
-                <span class="badge bg-info text-dark skill-badge"><i class="bi bi-braces me-1"></i>C++</span>
-                <span class="badge bg-warning text-dark skill-badge"><i class="bi bi-cup-hot me-1"></i>Java</span>
-                <span class="badge bg-success skill-badge"><i class="bi bi-filetype-py me-1"></i>Python</span>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="section-card" id="contact">
-            <h2 class="section-title">
-                <i class="bi bi-envelope-fill me-2"></i>Contact Information
-            </h2>
-            <div class="contact-item">
-                <i class="bi bi-whatsapp text-success" style="color:#25d366 !important;"></i>
-                <span><strong>WhatsApp / Phone:</strong>
-                    <a href="tel:01310561794">01310561794</a>
-                </span>
-            </div>
-            <div class="contact-item">
-                <i class="bi bi-envelope-at-fill"></i>
-                <span><strong>Email:</strong>
-                    <a href="mailto:tasrifkhan0102@gmail.com">tasrifkhan0102@gmail.com</a>
-                </span>
-            </div>
-        </div>
-
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p class="mb-0">&copy; 2026 Tasrif Khan. All rights reserved.</p>
+    <footer class="footer mt-auto py-4 bg-dark text-center text-secondary">
+        <div class="container">
+            <span>&copy; 2026 Tasrif Khan. All rights reserved.</span>
+        </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
